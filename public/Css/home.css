@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(21, 23, 37);
+}
+#main{
+    position: absolute;
+    top:25%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width:100%;
+
+}
+#title-btn-hired-recruter{
+    display: inline;
+   
+}
+.heading{
+    color: rgb(245, 55, 159);
+    font-family: "Gothic A1", sans-serif;
+    font-style: normal;
+}
+.description{
+    color: antiquewhite;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.btn-recruter-hired{
+    display: flex;
+    margin-top:50px;
+}
+.btn-recruter-hired a,button[id="recruter-btn"]{
+    text-decoration: none;
+    color: rgb(245, 248, 248);
+    padding: 5px;
+    font-size:18px;
+    box-shadow: 0px 0px 2px 1px rgb(248, 34, 159);
+    border-radius: 5px;
+    background-color: rgb(247, 31, 139);
+    cursor: pointer;
+    margin-right:10px;
+    border: 0px;
+}
+#image img{
+    position: relative;
+    top: -60px;
+    height: 350px;
+    border-radius: 25px;
+    /* opacity:0.7; */
+    z-index: 100;
+}
+.balls{
+    position: relative;
+    top: -20px;
+    width:60px;
+    height:60px;
+    border: 0px;
+    border: 0px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom right, rgb(46, 48, 170),rgb(89, 62, 184));
+    box-shadow: 2px 0px 10px 5px rgb(149, 181, 223);
+}
+.balls2{
+    position: relative;
+    top: -30px;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    border: 1px solid yellow;
+    background-image: linear-gradient(to bottom right, rgb(241, 250, 110),rgb(241, 252, 85));
+    box-shadow: 0px 0px 5px 5px rgb(249, 252, 106);
+}
+.balls3{
+    position: relative;
+    top: -120px;
+    left: 250px;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    border: 1px solid yellow;
+    background-image: linear-gradient(to bottom right, rgb(245, 35, 182),rgb(253, 48, 202));
+    box-shadow: 0px 0px 5px 5px rgb(248, 72, 225);
+}
+/* -----------------------signUp form-------------------------- */
+#Signup-form form{
+    display: flex;
+    flex-direction: column;
+}
+#Signup-form form input{
+  margin-top: 10px;
+}
+#Signup-form form button{
+  margin-top: 10px;
+}
+/* -----------------------------login form----------------------- */
+#Login-form form{
+    display: flex;
+    flex-direction: column;
+}
+#Login-form form input{
+    margin-top: 10px;
+  }
+#Login-form form button{
+    margin-top: 10px;
+  }

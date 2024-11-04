@@ -1,0 +1,44 @@
+<div id="container">
+    <div id="job-box">
+        <div id="images">
+            <img src="/images/job-image.jpeg" alt="job-image">
+        </div>
+        <div id="title-detail">
+            <%if (details) {%>
+                <p><span class="p-font-color-orange p-underline"><%= details.value %></span> Oppertunity in <span class="p-font-color-green"><%= details.company %></span>  At <%= details.location %></p>
+            <%}%>
+        </div>
+        <div id="details">
+            <%if (details) {%>
+                <div class="detail-list">
+                    <ul>
+                        <li id="company" class="detail-margin font-color-green font-size-700-25px">
+                            <%= details.company %>
+                            <% if(locals.recruiterEmail){%>
+                                <span><a  href="/edit-job-detail/<%= details.id %>"><i class="fa-regular fa-pen-to-square edite-color"></i></a></span>
+                                <span onclick="deleteProcess('<%= details.id%>')"><i class="fa-solid fa-trash cursor" ></i></span>
+                            <%}%>
+                        </li>
+                        <li id="position"class="detail-margin font-color-gray font-size-300-18px"><%= details.value %></li>
+                        <li id="location"class="detail-margin font-color-gray font-size-300-18px"><i class="fa-solid fa-location-dot detail-icon-colore"></i> <%= details.location %></li>
+                        <li id="salary"class="detail-margin font-color-gray font-size-300-18px"><i class="fa-solid fa-hand-holding-dollar detail-icon-colore"></i>  Rs. <%= details.salary %></li>
+                        <li id="applydate"class="detail-margin font-color-gray font-size-300-18px"><i class="fa-regular fa-calendar-days detail-icon-colore"></i> Apply By <%= details.applydate %></li>
+                        <li id="opening"class="detail-margin font-color-gray font-size-300-18px"><i class="fa-solid fa-book-open-reader detail-icon-colore"></i> Number Of Openings <%= details.openings %></li>
+                        <li id="Applicant"class="detail-margin font-color-gray font-size-300-18px"><i class="fa-solid fa-user detail-icon-colore"></i> Applied <%= details.applied %></li>
+                        <li>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalCenter" data-id="<%= details.id %>" comp-name="<%= details.company %>" roll-data="<%= details.value %>"id="datainfo">
+                                Apply Now
+                           </button>
+                        </li>
+                        <li id="lastVisit">
+                            <% if(locals.lastVisit){ %>
+                                    Your Last Visit Was On: <%= locals.lastVisit  %>
+                                </div>         
+                            <% } %>
+                        </li>
+                    </ul>
+                </div>
+            <%}%>
+        </div> 
+    </div>
+</div>

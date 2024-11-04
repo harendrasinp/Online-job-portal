@@ -1,0 +1,32 @@
+
+
+<div id="main-add-new-job">
+    <div id="add-new-job-from">
+        <form action="/add-new-job" method="post">
+            <h3>Create Vacancies Card</h3>
+            <input type="text" name="company" placeholder="Company Name" class="form-control">
+            <select name="value" class="form-select form-select-md mt-2">
+                <option value="" disabled selected >Select Job Designation</option>
+                <option value="fullstack Developer">fullstack Developer</option>
+                <option value="Web seveloper">Web developer</option>
+                <option value="FrontEnd Developer">FrontEnd Developer</option>
+                <option value="BackEnd Developer">BackEnd Developer</option>
+                <option value="Python Developer">Pyton Developer</option>
+            </select>
+            <input type="text" name="location" placeholder="location" class="form-control">
+            <input type="text" name="salary" placeholder="salary" class="form-control">
+            <input type="date"name="date" title="Apply by" class="form-control">
+            <input type="number"name="openings" placeholder="opening" class="form-control">
+            <button type="submit" class="btn btn-primary mt-2">Create Card</button>
+            <% if(errosMessages && errosMessages.length>0) { %>
+                <div class="errorMsg">
+                    <ul class="ul-list">
+                                <% errosMessages.forEach((err)=>{%>
+                                    <li><%= err.msg %></li>
+                                <%})%>
+                            </ul>
+                    </div>
+            <%}%>
+        </form>
+    </div>
+</div>

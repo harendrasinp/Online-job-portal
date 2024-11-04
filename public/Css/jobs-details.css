@@ -1,0 +1,95 @@
+#container{
+    background-color: rgb(230, 217, 204);
+    height:535px;
+    width:100%; 
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+#job-box{
+    position: relative;
+    top: -20px;
+    width:80%;
+    height:520px;
+    border: 2px solid rgb(63, 60, 60);
+}
+#images{
+    display: flex;
+    justify-content: center;
+}
+#images img{
+    position: relative;
+    width:75%;
+    height:120px;
+
+}
+#title-detail{
+    position: relative;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", serif;
+}
+#title-detail p{
+    font-size: 25px;
+    color: rgb(36, 41, 41);
+}
+.p-font-color-orange{
+    color: rgb(204, 151, 5);
+}
+.p-font-color-green{
+    color: rgb(172, 31, 125);
+}
+.p-underline{
+    text-decoration: underline;
+}
+/* ---------------------------------------details Item---------------------------- */
+#details{
+    position: relative;
+    top:45px;
+}
+.detail-list{ 
+    width:400px;
+    text-align: left;
+}
+.detail-list ul{ 
+    list-style: none;
+}
+.detail-margin{
+    margin-top:2px;
+}
+.font-color-green{
+    color: rgb(133, 18, 108);
+}
+.font-color-gray{
+    color: rgb(66, 68, 62);
+}
+.font-size-700-25px{
+    font-size:25px;
+    font-weight: 700;
+}
+.font-size-300-18px{
+    font-size: 18px;
+    font-weight:400;
+}
+.detail-icon-colore{
+    color: rgb(4, 58, 107);
+}
+#lastVisit{
+    text-align: center;
+    position: relative;
+    top: 10px;
+    padding: 2;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(19, 138, 19);
+}
+/* ------------------------------------delete icon-------------------------- */
+.cursor{
+    cursor: pointer;
+}
+/*--------------------------------------modal------------------------------------- */
+.modal-content{
+   width: 450px;
+   /* padding:18px; */
+}

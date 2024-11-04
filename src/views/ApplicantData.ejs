@@ -1,0 +1,32 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Applied To</th>
+        <th scope="col">Email</th>
+        <th scope="col">Contact</th>
+        <th scope="col">Resume</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% if(data){%>
+            <% data.forEach((dt)=>{%>
+                <tr>
+                    <th scope="row"><%= dt.id %></th>
+                    <td><%= dt.name %></td>
+                    <td><%= dt.company %></td>
+                    <td><%= dt.email %></td>
+                    <td><%= dt.contact %></td>
+                    <td>
+                      <% if (dt.resumePath) { %>
+                          <a href="resumePDF/<%= dt.resumePath %>" class="btn btn-primary btn-sm" target="_blank">View</a>
+                      <% } else { %>
+                          No resume uploaded
+                      <% } %>
+                  </td>
+                </tr>
+            <%})%>
+         <%}%>
+    </tbody>
+  </table>

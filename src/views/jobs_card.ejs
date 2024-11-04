@@ -1,0 +1,24 @@
+<div id="main-detail">
+    <div id="detail-title">
+        <h2>Vacancies Cards</h2>
+    </div>
+    <div id="cards-box">
+            <%if (details) {%>
+            <% details.forEach((ele)=>{%>
+                    <div class="cards">
+                        <ul>
+                            <li class="compant-title-color compant-title-font-size"><%= ele.company %></li>
+                            <li><%= ele.value %></li>
+                            <li><i class="fa-solid fa-location-dot icon-color"></i> <%= ele.location %></li>
+                            <li><i class="fa-solid fa-hand-holding-dollar icon-color"></i> Rs. <%= ele.salary %></li>
+                            <li><i class="fa-regular fa-calendar-days icon-color"></i> Apply By <%= ele.applydate %></li>
+                            <li><i class="fa-solid fa-book-open-reader icon-color"></i> Number Of Openings <%= ele.openings %></li>    
+                        </ul>
+                        <div class="view-detail-btn">
+                            <a href="/jobs-detail/<%= ele.id %>" class="view-btn"> View Details</a>
+                        </div>
+                    </div>
+                <%})%>
+            <%}%>
+    </div>
+</div>

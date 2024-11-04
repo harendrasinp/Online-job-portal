@@ -1,0 +1,28 @@
+
+.nav-bar-color{
+    background-color: rgb(13, 6, 37);
+}
+.nav-item:hover{
+    color: rgb(89, 220, 243);
+}
+.navbar-brand{
+    font-family: "Playwrite ES Deco", cursive;
+}
+.web-name{
+margin-left: 20px;
+    color: antiquewhite;
+    font-family: "Playwrite ES Deco", cursive;
+}
+.nav-bar-font-color a{
+    color: antiquewhite;
+    margin-left: 25px;
+}
+.dropdown-toggle {
+    text-decoration: none;
+}
+.dropdown{
+    margin-left:20px;
+}
+.dropdown ul li a{
+    color: black;
+}
