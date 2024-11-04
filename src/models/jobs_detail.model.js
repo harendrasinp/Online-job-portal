@@ -41,7 +41,6 @@ export default class JobsVacanciesModel{
     }
     static mactchingdata(id){
         const jobName=jobDetail.find((jid)=>jid.id==id);
-        console.log(jobName)
         jobName.applied+=1;
     }
 }

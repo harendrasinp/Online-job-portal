@@ -1,8 +1,9 @@
 
 export default class ApplicantData{
-    constructor(id,company,name,email,contact,resumePath){
+    constructor(id,company,roll,name,email,contact,resumePath){
         this.id=id,
-        this.company=company
+        this.company=company,
+        this.roll=roll,
         this.name=name,
         this.email=email,
         this.contact=contact;
@@ -11,8 +12,8 @@ export default class ApplicantData{
     static allApplicantData(){
         return applicantData
     }
-    static addApplicantData(company,name,email,contact,resumePath){
-     const data=new ApplicantData(applicantData.length+1,company,name,email,contact,resumePath);
+    static addApplicantData(company,name,roll,email,contact,resumePath){
+     const data=new ApplicantData(applicantData.length+1,company,roll,name,email,contact,resumePath);
      applicantData.push(data);
     }
 }

@@ -57,7 +57,7 @@ export default class JobDetailsControllers{
         const{id,company,roll,name,email,contact}=req.body;
         const resumePath = req.file ? req.file.filename : null;
         JobsVacanciesModel.mactchingdata(id)
-        ApplicantData.addApplicantData(company,name,email,contact,resumePath);
+        ApplicantData.addApplicantData(company,roll,name,email,contact,resumePath);
         async function sendMail(em){
                 // Create Email Transporter
                 const trasporter=nodemailer.createTransport({
